@@ -2,6 +2,7 @@
 
 // переменные
 const movieCardsWrapper = document.querySelector(".movie-cards__wrapper");
+let movieArray = [];
 
 // рендер карточек с фильмами
 async function getMovies() {
@@ -9,13 +10,13 @@ async function getMovies() {
     const response = await fetch("./info.json");
     const movies = await response.json();
     console.log(movies);
-    createCard(movies);
+    movieArray = movies;
+    console.log(movieArray);
+    createCard(movieArray);
   } catch (error) {
     console.error("Ошибка при получении данных:", error);
   }
 }
-
-getMovies();
 
 // функция для рендера карточки фильма
 function createCard(array) {
@@ -31,3 +32,5 @@ function createCard(array) {
     movieCardsWrapper.insertAdjacentHTML("beforeend", cardMovie);
   });
 }
+
+getMovies();
