@@ -9,9 +9,7 @@ async function getMovies() {
   try {
     const response = await fetch("./info.json");
     const movies = await response.json();
-    console.log(movies);
-    movieArray = movies;
-    console.log(movieArray);
+    movieArray = movies.movies;
     createCard(movieArray);
   } catch (error) {
     console.error("Ошибка при получении данных:", error);
