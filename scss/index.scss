@@ -1,2 +1,12 @@
-@import "./container.scss";
-@import "./card.scss"
+@import "./_container.scss";
+@import "./_card.scss";
+@import "./_slider.scss";
+@import "./_body.scss";
+@import "./_vars.scss";
+@import "./_header.scss";
+
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}

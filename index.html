@@ -7,12 +7,48 @@
     <link rel="stylesheet" href="./scss/index.css">
     <!-- <link rel="stylesheet" href="./styles/normalize.css"> -->
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Movies Studio</title>
 </head>
 
 <body>
-    <header></header>
+    <header>
+
+        <a href="#" class="img__link"><img src="./assets/images/logo.svg" alt="Логотип" id="logot"></a>
+        <ul class="menu">
+            <li class="blocktext" id="H"><a href=""> Новое</a></li>
+            <li class="blocktext" id="S"><a href="">Жанры</a></li>
+            <li class="blocktext" id="Pa"><a href="">Страны</a></li>
+            <li class="blocktext" id="Po"><a href="">Фильмы</a></li>
+            <li class="blocktext" id="Po"><a href="">Сериалы</a></li>
+        </ul>
+
+    </header>
     <main>
+        <div class="container" id="container_slider">
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                    chevron_left
+                </button>
+                <ul class="image-list">
+                    <img class="image-item" src="./asstets/images/1+1.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/5элемент.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Бойцовский_клуб.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Брилиантовая_рука.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Валли.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Властелин_колец.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Гордость_и_предубеждение.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Джентельмены.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Достучаться_до_небес.webp" alt="" />
+                    <img class="image-item" src="./asstets/images/Зеленая_миля.webp" alt="" />
+                </ul>
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                    chevron_right
+                </button>
+            </div>
+        </div>
+
         <div class="container">
             <h2>Фильмы для вас</h2>
             <div class="movie-cards__wrapper">
