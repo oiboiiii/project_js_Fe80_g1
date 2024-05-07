@@ -80,13 +80,6 @@
 .slider-wrapper .slide-button:hover {
   background: #404040;
 }
-.slider-wrapper .slide-button.prev-slide {
-  left: -25px;
-  display: none;
-}
-.slider-wrapper .slide-button.next-slide {
-  right: -25px;
-}
 
 .slider-wrapper .image-list {
   font-size: 0px;
@@ -105,11 +98,11 @@
   margin: 9px 9px;
 }
 
-.slider-wrapper .slide-button#prev-slide {
+.slider-wrapper .slide-button#left {
   left: -25px;
   display: none;
 }
-.slider-wrapper .slide-button#next-slide {
+.slider-wrapper .slide-button#right {
   right: -25px;
 }
 

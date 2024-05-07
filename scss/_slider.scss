@@ -31,18 +31,8 @@
         &:hover {
             background: #404040;
         }
-
-        &.prev-slide {
-            left: -25px;
-            display: none;
-        }
-
-        &.next-slide {
-            right: -25px;
-        }
     }
 }
-
 
 .slider-wrapper {
     .image-list {
@@ -72,12 +62,12 @@
 
 
 .slider-wrapper {
-    .slide-button#prev-slide {
+    .slide-button#left {
         left: -25px;
         display: none;
     }
 
-    .slide-button#next-slide {
+    .slide-button#right {
         right: -25px;
     }
 }
