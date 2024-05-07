@@ -89,6 +89,10 @@
   scroll-behavior: smooth;
 }
 
+.image-list::-webkit-scrollbar {
+  display: none;
+}
+
 .slider-wrapper .image-list .image-item {
   width: 176px;
   height: 234px;
