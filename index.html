@@ -23,27 +23,32 @@
             <li class="blocktext" id="Po"><a href="">Фильмы</a></li>
             <li class="blocktext" id="Po"><a href="">Сериалы</a></li>
         </ul>
+        <form class="search">
+            <input type="text" class="search_str">
+            <button type="submit" class="search_button"></button>
+        </form>
 
     </header>
     <main>
-        <div class="container" id="container_slider">
+        <div class="container" id="">
             <div class="slider-wrapper">
-                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                <button id="left" class="slide-button material-symbols-rounded">
                     chevron_left
                 </button>
-                <ul class="image-list">
-                    <img class="image-item" src="./asstets/images/1+1.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/5элемент.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Бойцовский_клуб.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Брилиантовая_рука.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Валли.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Властелин_колец.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Гордость_и_предубеждение.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Джентельмены.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Достучаться_до_небес.webp" alt="" />
-                    <img class="image-item" src="./asstets/images/Зеленая_миля.webp" alt="" />
-                </ul>
-                <button id="next-slide" class="slide-button material-symbols-rounded">
+                <div class="image-list">
+                    <img class="image-item" src="./asstets/images/1+1.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/5элемент.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Бойцовский_клуб.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Брилиантовая_рука.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Валли.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Властелин_колец.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Гордость_и_предубеждение.webp" alt=""
+                        draggable="false" />
+                    <img class="image-item" src="./asstets/images/Джентельмены.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Достучаться_до_небес.webp" alt="" draggable="false" />
+                    <img class="image-item" src="./asstets/images/Зеленая_миля.webp" alt="" draggable="false" />
+                </div>
+                <button id="right" class="slide-button material-symbols-rounded">
                     chevron_right
                 </button>
             </div>
@@ -56,10 +61,22 @@
             <div class="modal-wrap">
             </div>
         </div>
+
+        <footer>
+            <a href="#" class="img__link"><img src="./assets/images/logo.svg" alt="Логотип" id="logot"></a>
+            <ul class="menu">
+                <li class="blocktext"><a href=""> Новое</a></li>
+                <li class="blocktext"><a href="">Жанры</a></li>
+                <li class="blocktext"><a href="">Страны</a></li>
+                <li class="blocktext"><a href="">Сериалы</a></li>
+                <li class="blocktext"><a href="">Фильмы</a></li>
+            </ul>
+        </footer>
     </main>
     <footer></footer>
     <script src="./script.js"></script>
     <script src="./cards.js"></script>
+    <script src="./slider.js"></script>
 </body>
 
 </html>
