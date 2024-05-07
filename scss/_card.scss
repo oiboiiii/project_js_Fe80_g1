@@ -1,4 +1,5 @@
 .movie-cards__wrapper {
+    font-family: $fontmain;
     margin-top: 17px;
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +21,8 @@
     &__info {
         padding-top: 19px;
         padding-bottom: 15px;
-        font-size: 14px;
+        font-size: 13px;
+        color: aliceblue;
     }
 
 }
@@ -31,7 +33,7 @@
         height: 27px;
         border-radius: 4px;
         background-color: #F5C51C;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 700;
         position: absolute;
         z-index: 1;
@@ -46,5 +48,22 @@
         width: 100%;
         max-height: 276px;
         border-radius: 8px;
+    }
+
+    &__img-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        background-color: black;
+        opacity: 20%;
+    }
+
+    &__img-hover:hover {
+        cursor: pointer;
+        background-color: gray;
     }
 }
