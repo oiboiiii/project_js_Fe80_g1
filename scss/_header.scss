@@ -32,7 +32,7 @@ header {
     padding-top: 10px;
 
 
-    li {
+    .blocktext {
         display: inline-block;
     }
 
@@ -44,18 +44,6 @@ header {
 .blocktext {
     font-family: $fontmain;
     font-weight: lighter;
-
-    /*
-    &.H {
-        margin: 43px 3px 10px 270px;
-    }
-
-    &.S,
-    &.Pa,
-    &.Po,
-    &.N {
-        margin: 43px 3px 10px 3px;
-    }*/
 }
 
 a {
