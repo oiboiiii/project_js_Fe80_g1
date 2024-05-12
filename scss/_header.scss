@@ -13,11 +13,8 @@ header {
     //z-index: 1;
 }
 
-#logot {
-    width: 140.39px;
-    height: 40px;
-    left: 135px;
-    top: 60px;
+.img__link {
+    width: 150px;
     margin: 30px 3px 10px 3px;
 
     &:hover {
@@ -29,7 +26,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-basis: 36rem;
-    padding-top: 10px;
+    padding-top: 20px;
 
 
     .blocktext {
@@ -44,6 +41,7 @@ header {
 .blocktext {
     font-family: $fontmain;
     font-weight: lighter;
+    font-size: smaller;
 }
 
 a {
@@ -51,10 +49,110 @@ a {
     color: aliceblue;
 
     &:hover {
-        text-decoration: underline;
+        opacity: 0.5;
     }
 
     &:visited {
         text-decoration: none;
     }
+}
+
+.blocktext {
+    .submenu {
+        position: absolute;
+        // top: 100%;
+        // left: 0;
+        width: max-content;
+        z-index: 10;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        list-style-type: none;
+        text-decoration: none;
+        color: aliceblue;
+        padding: 10px;
+    }
+}
+
+.submenu {
+    visibility: hidden;
+    background: #434242;
+
+    li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:hover {
+            text-decoration: none;
+            opacity: 0.5;
+        }
+    }
+
+}
+
+ul li:hover .submenu {
+    visibility: visible;
+
+}
+
+@media screen and (max-width: 2400px) {
+    .menu_button {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .menu_button {
+        visibility: visible;
+        flex-basis: content;
+        font-family: $fontmain;
+        color: aliceblue;
+        padding-top: 20px;
+
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    // .menu_button:hover .menu {
+    //     opacity: 0.5;
+    //     visibility: visible;
+    // }
+}
+
+
+//     position: absolute;
+//     // top: 100%;
+//     // left: 0;
+//     width: max-content;
+//     z-index: 10;
+//     -webkit-transition: 0.5s ease-in-out;
+//     -moz-transition: 0.5s ease-in-out;
+//     -o-transition: 0.5s ease-in-out;
+//     transition: 0.5s ease-in-out;
+//     list-style-type: none;
+//     text-decoration: none;
+//     color: aliceblue;
+//     padding: 10px;
+
+
+@media screen and (max-width: 425px) {
+    /* стили для широкого смартфона */
+}
+
+@media screen and (max-width: 375px) {
+    /* стили для среднего смартфона */
+}
+
+@media screen and (max-width: 320px) {
+    /* стили для малого смартфона */
 }

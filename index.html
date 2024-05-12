@@ -16,12 +16,45 @@
     <header>
 
         <a href="#" class="img__link"><img src="./assets/images/logo.svg" alt="Логотип" id="logot"></a>
+        <input type="button" class="menu_button" value="Меню">
         <ul class="menu">
-            <li class="blocktext"><a href=""> Новое</a></li>
-            <li class="blocktext"><a href="">Жанры</a></li>
-            <li class="blocktext"><a href="">Страны</a></li>
-            <li class="blocktext"><a href="">Фильмы</a></li>
-            <li class="blocktext"><a href="">Сериалы</a></li>
+            <li class="blocktext"><a href="">Жанры</a>
+                <ul class="submenu">
+                    <li><a href="">Драма</a></li>
+                    <li><a href="">Комедия</a></li>
+                    <li><a href="">Криминал</a></li>
+                    <li><a href="">Фантастика</a></li>
+                    <li><a href="">Триллер</a></li>
+                    <li><a href="">Приключения</a></li>
+                    <li><a href="">Аниме</a></li>
+                    <li><a href="">Мультфильм</a></li>
+                    <li><a href="">Романтика</a></li>
+                    <li><a href="">Боевик</a></li>
+                    <li><a href="">Детектив</a></li>
+                    <li><a href="">Биография</a></li>
+                    <li><a href="">Фэнтези</a></li>
+                    <li><a href="">Мелодрама</a></li>
+                    <li><a href="">История</a></li>
+                    <li><a href="">Семейный</a></li>
+                    <li><a href="">Мюзикл</a></li>
+                </ul>
+            </li>
+            <li class="blocktext"><a href="">Страны</a>
+                <ul class="submenu">
+                    <li><a href="">Франция</a></li>
+                    <li><a href="">СССР</a></li>
+                    <li><a href="">Германия</a></li>
+                    <li><a href="">США</a></li>
+                    <li><a href="">Великобритания</a></li>
+                    <li><a href="">Канада</a></li>
+                    <li><a href="">Япония</a></li>
+                    <li><a href="">Новая Зеландия</a></li>
+                    <li><a href="">Чехия</a></li>
+                    <li><a href="">Мексика</a></li>
+                </ul>
+            </li>
+            <li class="blocktext"><a href="" id="movies_sort">Фильмы</a></li>
+            <li class="blocktext"><a href="" id="cartoon_sort">Мультфильмы</a></li>
         </ul>
         <form class="search">
             <input type="text" class="search_str">
@@ -53,19 +86,14 @@
 
         <footer>
             <a href="#" class="img__link"><img src="./assets/images/logo.svg" alt="Логотип" id="logot"></a>
-            <ul class="menu">
-                <li class="blocktext"><a href=""> Новое</a></li>
-                <li class="blocktext"><a href="">Жанры</a></li>
-                <li class="blocktext"><a href="">Страны</a></li>
-                <li class="blocktext"><a href="">Сериалы</a></li>
-                <li class="blocktext"><a href="">Фильмы</a></li>
-            </ul>
+            <span>Все права защищены</span>
         </footer>
     </main>
     <footer></footer>
     <script src="./script.js"></script>
     <script src="./cards.js"></script>
     <script src="./slider.js"></script>
+    <script src="./header_sort.js"></script>
 </body>
 
 </html>
