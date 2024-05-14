@@ -30,7 +30,7 @@ header {
 
 
     .blocktext {
-        display: inline-block;
+        list-style-type: none;
     }
 
     a {
@@ -96,16 +96,74 @@ ul li:hover .submenu {
 
 }
 
+//бургер меню
+.burger {
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+    padding-top: 0;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0
+}
+
+.burger::after {
+    bottom: 0
+}
+
+
+// /* Добавляем класс active для анимации иконки бургера */
+.burger.active span {
+    transform: scale(0)
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+// адаптив
 @media screen and (max-width: 2400px) {
     .menu_button {
-        visibility: hidden;
+        display: none;
+    }
+
+    .search_blocktext {
+        display: none;
     }
 }
 
 @media screen and (max-width: 850px) {
     .menu_button {
-        visibility: visible;
-        flex-basis: content;
+        display: inline-block;
+        // flex-basis: content;
         font-family: $fontmain;
         color: aliceblue;
         padding-top: 20px;
@@ -115,12 +173,30 @@ ul li:hover .submenu {
         background-color: rgba(0, 0, 0, 0);
     }
 
-    .menu {
+    .blocktext {
         display: none;
     }
 
     .search {
         display: none;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        padding-top: 0;
+        flex-basis: content;
+    }
+
+    .search_blocktext {
+        display: inline-block;
+
+        font-family: $fontmain;
+        color: aliceblue;
+        padding-top: 20px;
+        margin-left: 20px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     // .menu_button:hover .menu {

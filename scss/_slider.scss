@@ -3,6 +3,7 @@
     max-width: 1200px;
     position: relative;
     margin-bottom: 30px;
+
 }
 
 .slider-wrapper {
@@ -51,8 +52,8 @@
 .slider-wrapper {
     .image-list {
         .image-item {
-            width: 176px;
-            height: 234px;
+            max-width: 11rem;
+            max-height: 14.6rem;
             object-fit: cover;
             border-radius: 8px;
             margin: 9px 9px;
