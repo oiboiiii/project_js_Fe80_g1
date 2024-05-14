@@ -4,6 +4,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 487px) {
+        justify-content: center;
+    }
 }
 
 .movie-card {
