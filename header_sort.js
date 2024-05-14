@@ -15,3 +15,7 @@ function cartoonSortFunction(e) {
 moviesSort.addEventListener('click', moviesSortFunction);
 cartoonSort.addEventListener('click', cartoonSortFunction);
 
+document.querySelector('.burger').addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('open');
+})
