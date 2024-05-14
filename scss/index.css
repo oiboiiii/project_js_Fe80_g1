@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .container {
   max-width: 1200px;
   width: 95%;
@@ -217,19 +216,24 @@ ul li:hover .submenu {
   visibility: visible;
 }
 
+.open {
+  display: flex !important;
+}
+
 .burger {
-  display: flex;
+  display: none;
   position: relative;
   z-index: 50;
   align-items: center;
   justify-content: flex-end;
   width: 30px;
   height: 18px;
+  margin-top: 20px;
 }
 
 .burger span {
   height: 2px;
-  width: 80%;
+  width: 100%;
   transform: scale(1);
   background-color: #FAF6F2;
   padding-top: 0;
@@ -267,6 +271,46 @@ ul li:hover .submenu {
   transform: rotate(45deg) translate(0, 50%);
 }
 
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+  }
+  .menu li {
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 1rem;
+  }
+  .search_blocktext {
+    padding: 0;
+    margin: 0;
+  }
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 2400px) {
   .menu_button {
     display: none;
@@ -275,7 +319,7 @@ ul li:hover .submenu {
     display: none;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .menu_button {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
@@ -285,37 +329,22 @@ ul li:hover .submenu {
     outline: none;
     background-color: rgba(0, 0, 0, 0);
   }
-  .blocktext {
-    display: none;
-  }
   .search {
     display: none;
-  }
-  .menu {
-    justify-content: flex-end;
-    padding-top: 0;
-    flex-basis: content;
   }
   .search_blocktext {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     color: aliceblue;
-    padding-top: 20px;
-    margin-left: 20px;
     border: none;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
   }
 }
-@media screen and (max-width: 425px) {
-  /* стили для широкого смартфона */
+.search_button {
+  visibility: hidden;
 }
-@media screen and (max-width: 375px) {
-  /* стили для среднего смартфона */
-}
-@media screen and (max-width: 320px) {
-  /* стили для малого смартфона */
-}
+
 .modal {
   font-family: "Montserrat", sans-serif;
   position: fixed;
@@ -487,19 +516,24 @@ ul li:hover .submenu {
   visibility: visible;
 }
 
+.open {
+  display: flex !important;
+}
+
 .burger {
-  display: flex;
+  display: none;
   position: relative;
   z-index: 50;
   align-items: center;
   justify-content: flex-end;
   width: 30px;
   height: 18px;
+  margin-top: 20px;
 }
 
 .burger span {
   height: 2px;
-  width: 80%;
+  width: 100%;
   transform: scale(1);
   background-color: #FAF6F2;
   padding-top: 0;
@@ -537,6 +571,46 @@ ul li:hover .submenu {
   transform: rotate(45deg) translate(0, 50%);
 }
 
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: black;
+    animation: burgerAnimation 0.4s;
+  }
+  .menu li {
+    flex-direction: column;
+    row-gap: 30px;
+    padding-top: 1rem;
+  }
+  .search_blocktext {
+    padding: 0;
+    margin: 0;
+  }
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 2400px) {
   .menu_button {
     display: none;
@@ -545,7 +619,7 @@ ul li:hover .submenu {
     display: none;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .menu_button {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
@@ -555,37 +629,22 @@ ul li:hover .submenu {
     outline: none;
     background-color: rgba(0, 0, 0, 0);
   }
-  .blocktext {
-    display: none;
-  }
   .search {
     display: none;
-  }
-  .menu {
-    justify-content: flex-end;
-    padding-top: 0;
-    flex-basis: content;
   }
   .search_blocktext {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     color: aliceblue;
-    padding-top: 20px;
-    margin-left: 20px;
     border: none;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
   }
 }
-@media screen and (max-width: 425px) {
-  /* стили для широкого смартфона */
+.search_button {
+  visibility: hidden;
 }
-@media screen and (max-width: 375px) {
-  /* стили для среднего смартфона */
-}
-@media screen and (max-width: 320px) {
-  /* стили для малого смартфона */
-}
+
 .search {
   width: auto;
   padding-top: 20px;
